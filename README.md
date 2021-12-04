@@ -19,6 +19,16 @@ npm install @asince_npm/generate-password
 ```js
 import createPassword from "@asince_npm/generate-password/index.js";
 
+/**
+ *
+ * @param length is password's length. Default 8.
+ * @param hasUppercase case of capital letters in the password to be created. Default true.
+ * @param hasLowercase case of lowercase letters in the password. Default true.
+ * @param hasNumeric the state of having a number in the password. Default true.
+ * @param hasSymbol the presence of a special character in the password. Default true.
+ * @param prefix will there be a prefix in the password? Default "" (empty char)
+ * @returns {*}
+ */
 const password = createPassword({
           length: 8,
           hasUppercase: true,
